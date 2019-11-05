@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Apr 11 13:42:39 2018
+# Process ID: 5580
+# Current directory: G:/3160104699/lab5/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4640 G:\3160104699\lab5\vivado\abs_dif.xpr
+# Log file: G:/3160104699/lab5/vivado/vivado.log
+# Journal file: G:/3160104699/lab5/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/3160104699/lab5/vivado/abs_dif.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {G:/3160104699/lab5/vivado/abs_dif.runs/impl_1/abs_dif.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {G:/3160104699/lab5/vivado/abs_dif.runs/impl_1/abs_dif.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+close_hw
+close_project
+open_project G:/3160104699/lab7/vivado/TimerTop.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {G:/3160104699/lab7/vivado/TimerTop.runs/impl_1/TimerTop.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {G:/3160104699/lab7/vivado/TimerTop.runs/impl_1/TimerTop.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {G:/3160104699/lab7/vivado/TimerTop.runs/impl_1/TimerTop.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]

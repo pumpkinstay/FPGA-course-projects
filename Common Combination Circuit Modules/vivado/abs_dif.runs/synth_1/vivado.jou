@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Apr  4 14:05:02 2018
+# Process ID: 5304
+# Current directory: G:/3160104699/lab5/vivado/abs_dif.runs/synth_1
+# Command line: vivado.exe -log abs_dif.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source abs_dif.tcl
+# Log file: G:/3160104699/lab5/vivado/abs_dif.runs/synth_1/abs_dif.vds
+# Journal file: G:/3160104699/lab5/vivado/abs_dif.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source abs_dif.tcl -notrace
