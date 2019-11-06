@@ -1,0 +1,75 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Wed Jun 13 14:51:38 2018
+| Host         : dell-50-03 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file stopwatch_control_sets_placed.rpt
+| Design       : stopwatch
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    11 |
+| Unused register locations in slices containing registers |    33 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               7 |            4 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              36 |            9 |
+| Yes          | No                    | No                     |               8 |            3 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              20 |            7 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+--------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|              Clock Signal              |                Enable Signal               |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++----------------------------------------+--------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  control_inst/nextstate_reg[1]_i_2_n_0 |                                            |                                                        |                1 |              2 |
+|  clk_IBUF_BUFG                         |                                            | reset_IBUF                                             |                1 |              4 |
+|  clk_IBUF_BUFG                         | button_pro_inst/debounc_inst/Div/pulse1kHz | button_pro_inst/debounc_inst/control_button_inst/SR[0] |                1 |              4 |
+|  clk_IBUF_BUFG                         | control_inst/q_reg[0][0]                   | control_inst/SR[0]                                     |                1 |              4 |
+|  clk_IBUF_BUFG                         | control_inst/E[0]                          | control_inst/SR[0]                                     |                2 |              4 |
+|  clk_IBUF_BUFG                         | control_inst/q_reg[0]_0[0]                 | control_inst/SR[0]                                     |                2 |              4 |
+|  clk_IBUF_BUFG                         | timer_inst/time_d0/E[0]                    | control_inst/SR[0]                                     |                1 |              4 |
+|  clk_IBUF_BUFG                         |                                            |                                                        |                3 |              5 |
+|  clk_IBUF_BUFG                         | Div1/pulse400Hz                            |                                                        |                3 |              8 |
+|  clk_IBUF_BUFG                         |                                            | button_pro_inst/debounc_inst/Div/pulse1kHz             |                4 |             16 |
+|  clk_IBUF_BUFG                         |                                            | Div1/pulse400Hz                                        |                4 |             16 |
++----------------------------------------+--------------------------------------------+--------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 4      |                     6 |
+| 5      |                     1 |
+| 8      |                     1 |
+| 16+    |                     2 |
++--------+-----------------------+
+
+

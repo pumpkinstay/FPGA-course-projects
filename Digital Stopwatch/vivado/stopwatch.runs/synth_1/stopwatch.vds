@@ -1,0 +1,440 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Jun 13 14:49:25 2018
+# Process ID: 4996
+# Current directory: G:/Lab12/vivado/stopwatch.runs/synth_1
+# Command line: vivado.exe -log stopwatch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source stopwatch.tcl
+# Log file: G:/Lab12/vivado/stopwatch.runs/synth_1/stopwatch.vds
+# Journal file: G:/Lab12/vivado/stopwatch.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source stopwatch.tcl -notrace
+Command: synth_design -top stopwatch -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6272 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 307.473 ; gain = 80.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'stopwatch' [G:/Lab12/src/stopwatch.v:1]
+	Parameter sim bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'counter_n' [G:/Lab12/src/button_pro/counter_n.v:1]
+	Parameter n bound to: 125000 - type: integer 
+	Parameter counter_bits bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_n' (1#1) [G:/Lab12/src/button_pro/counter_n.v:1]
+INFO: [Synth 8-638] synthesizing module 'counter_n__parameterized0' [G:/Lab12/src/button_pro/counter_n.v:1]
+	Parameter n bound to: 40 - type: integer 
+	Parameter counter_bits bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_n__parameterized0' (1#1) [G:/Lab12/src/button_pro/counter_n.v:1]
+INFO: [Synth 8-638] synthesizing module 'button_pro' [G:/Lab12/src/button_pro/button_pro.v:1]
+	Parameter sim bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'synchronizer' [G:/Lab12/src/button_pro/synchronizer.v:1]
+INFO: [Synth 8-638] synthesizing module 'dffre' [G:/Lab12/src/button_pro/dffre.v:1]
+	Parameter n bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dffre' (2#1) [G:/Lab12/src/button_pro/dffre.v:1]
+INFO: [Synth 8-256] done synthesizing module 'synchronizer' (3#1) [G:/Lab12/src/button_pro/synchronizer.v:1]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [G:/Lab12/src/button_pro/debouncer.v:1]
+	Parameter sim bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'control_button' [G:/Lab12/src/button_pro/control_button.v:1]
+	Parameter LOW bound to: 0 - type: integer 
+	Parameter WAIT_HIGH bound to: 1 - type: integer 
+	Parameter HIGH bound to: 2 - type: integer 
+	Parameter WAIT_LOW bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'control_button' (4#1) [G:/Lab12/src/button_pro/control_button.v:1]
+INFO: [Synth 8-638] synthesizing module 'counter_n__parameterized1' [G:/Lab12/src/button_pro/counter_n.v:1]
+	Parameter n bound to: 100000 - type: integer 
+	Parameter counter_bits bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_n__parameterized1' (4#1) [G:/Lab12/src/button_pro/counter_n.v:1]
+INFO: [Synth 8-638] synthesizing module 'timer' [G:/Lab12/src/button_pro/timer.v:1]
+	Parameter n bound to: 10 - type: integer 
+	Parameter counter_bits bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'timer' (5#1) [G:/Lab12/src/button_pro/timer.v:1]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (6#1) [G:/Lab12/src/button_pro/debouncer.v:1]
+INFO: [Synth 8-638] synthesizing module 'pulse_trans' [G:/Lab12/src/button_pro/pulse_trans.v:1]
+INFO: [Synth 8-256] done synthesizing module 'pulse_trans' (7#1) [G:/Lab12/src/button_pro/pulse_trans.v:1]
+INFO: [Synth 8-256] done synthesizing module 'button_pro' (8#1) [G:/Lab12/src/button_pro/button_pro.v:1]
+INFO: [Synth 8-638] synthesizing module 'control' [G:/Lab12/src/control/control.v:1]
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter TIMING bound to: 1 - type: integer 
+	Parameter STOP bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [G:/Lab12/src/control/control.v:13]
+INFO: [Synth 8-256] done synthesizing module 'control' (9#1) [G:/Lab12/src/control/control.v:1]
+INFO: [Synth 8-638] synthesizing module 'timing' [G:/Lab12/src/timer/timing.v:1]
+INFO: [Synth 8-638] synthesizing module 'counter_n__parameterized2' [G:/Lab12/src/button_pro/counter_n.v:1]
+	Parameter n bound to: 10 - type: integer 
+	Parameter counter_bits bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_n__parameterized2' (9#1) [G:/Lab12/src/button_pro/counter_n.v:1]
+INFO: [Synth 8-638] synthesizing module 'BCD_60' [G:/Lab12/src/timer/BCD_60.v:1]
+	Parameter n bound to: 90 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'BCD_60' (10#1) [G:/Lab12/src/timer/BCD_60.v:1]
+INFO: [Synth 8-256] done synthesizing module 'timing' (11#1) [G:/Lab12/src/timer/timing.v:1]
+INFO: [Synth 8-638] synthesizing module 'seg7_display' [G:/Lab12/src/display/seg7_display.v:1]
+INFO: [Synth 8-638] synthesizing module 'counter_n__parameterized3' [G:/Lab12/src/button_pro/counter_n.v:1]
+	Parameter n bound to: 4 - type: integer 
+	Parameter counter_bits bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_n__parameterized3' (11#1) [G:/Lab12/src/button_pro/counter_n.v:1]
+INFO: [Synth 8-256] done synthesizing module 'seg7_display' (12#1) [G:/Lab12/src/display/seg7_display.v:1]
+INFO: [Synth 8-256] done synthesizing module 'stopwatch' (13#1) [G:/Lab12/src/stopwatch.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 346.547 ; gain = 119.797
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 346.547 ; gain = 119.797
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [G:/Lab12/src/stopwatch.xdc]
+Finished Parsing XDC File [G:/Lab12/src/stopwatch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/Lab12/src/stopwatch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/stopwatch_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/stopwatch_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 647.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:27 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element q_reg was removed.  [G:/Lab12/src/button_pro/timer.v:7]
+INFO: [Synth 8-5544] ROM "q" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'nextstate_reg' [G:/Lab12/src/control/control.v:16]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 5     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module counter_n 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+Module counter_n__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module dffre 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module control_button 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module counter_n__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+Module timer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module control 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter_n__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module BCD_60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+Module counter_n__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module seg7_display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element button_pro_inst/debounc_inst/TimerInst/q_reg was removed.  [G:/Lab12/src/button_pro/timer.v:7]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |    42|
+|4     |LUT2   |    10|
+|5     |LUT3   |     6|
+|6     |LUT4   |    22|
+|7     |LUT5   |     9|
+|8     |LUT6   |    13|
+|9     |FDRE   |    69|
+|10    |LD     |     2|
+|11    |IBUF   |     3|
+|12    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------+----------------------------+------+
+|      |Instance                  |Module                      |Cells |
++------+--------------------------+----------------------------+------+
+|1     |top                       |                            |   197|
+|2     |  Div1                    |counter_n                   |    42|
+|3     |  Div2                    |counter_n__parameterized0   |    13|
+|4     |  button_pro_inst         |button_pro                  |    62|
+|5     |    debounc_inst          |debouncer                   |    59|
+|6     |      Div                 |counter_n__parameterized1   |    42|
+|7     |      TimerInst           |timer                       |     9|
+|8     |      control_button_inst |control_button              |     8|
+|9     |    synch_inst            |synchronizer                |     2|
+|10    |      ff1                 |dffre_1                     |     1|
+|11    |      ff2                 |dffre_2                     |     1|
+|12    |    trans_inst            |pulse_trans                 |     1|
+|13    |      tran_ff             |dffre                       |     1|
+|14    |  control_inst            |control                     |     9|
+|15    |  disp                    |seg7_display                |     8|
+|16    |    count4                |counter_n__parameterized3   |     8|
+|17    |  timer_inst              |timing                      |    47|
+|18    |    BCD_60_inst           |BCD_60                      |    29|
+|19    |    time_d0               |counter_n__parameterized2   |    10|
+|20    |    time_d3               |counter_n__parameterized2_0 |     8|
++------+--------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 647.359 ; gain = 420.609
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 647.359 ; gain = 119.797
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 647.359 ; gain = 420.609
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LD => LDCE: 2 instances
+
+47 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:46 . Memory (MB): peak = 647.359 ; gain = 425.375
+INFO: [Common 17-1381] The checkpoint 'G:/Lab12/vivado/stopwatch.runs/synth_1/stopwatch.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 647.359 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 13 14:50:20 2018...
