@@ -5,7 +5,7 @@
 3.  设计12s定时器电路  
   含LED指示灯和按键功能    
 
-Running on the Nexys Video development system
+Running on the Basys3 development board
 ___
 
 Experimental task:  
