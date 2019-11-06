@@ -6,6 +6,9 @@
   再次按键，停止计时；  
   第三次按键，计数器自动复位为0’0.0’’，回到“初始”状态。  
 
+running on Basys3 development board.  
+src: verilog source file, including testbench file(xxx_tb.v) (simulation with modelsim)  
+vivado: integration with vivado  
 ___
 
 Experimental Task:  
