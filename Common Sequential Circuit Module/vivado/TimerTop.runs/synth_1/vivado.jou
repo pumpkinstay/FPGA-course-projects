@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Apr 11 14:45:49 2018
+# Process ID: 5588
+# Current directory: G:/3160104699/lab7/vivado/TimerTop.runs/synth_1
+# Command line: vivado.exe -log TimerTop.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TimerTop.tcl
+# Log file: G:/3160104699/lab7/vivado/TimerTop.runs/synth_1/TimerTop.vds
+# Journal file: G:/3160104699/lab7/vivado/TimerTop.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TimerTop.tcl -notrace
